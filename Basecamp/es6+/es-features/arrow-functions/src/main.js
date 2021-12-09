@@ -1,0 +1,1 @@
+const action = () => ({ name: "José" });
