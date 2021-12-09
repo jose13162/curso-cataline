@@ -1,0 +1,23 @@
+{
+  "name": "configurando-estrutura",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node-dev --respawn --quiet --clear ./src/main.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/simplebar": "^5.1.2",
+    "ts-node-dev": "^1.1.6",
+    "typescript": "^4.2.4"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "onscreen": "^1.4.0",
+    "simplebar": "^5.3.2"
+  }
+}
