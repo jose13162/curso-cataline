@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid Layout</title>
+  <style>
+    body {
+      background: #3494e6;
+      height: 100vh;
+      overflow-y: hidden;
+      margin: 2rem;
+      font-family: sans-serif;
+    }
+    .item {
+      background: rgb(255, 255, 255, 0.6);
+      border-radius: 5px;
+    }
+    .container {
+      display: grid;
+      grid:
+        "header    header"   auto
+        "content   nav"      500px
+        "footer    footer"   auto 
+        / 1fr       150px;
+      grid-gap: 1rem;
+    }
+    .header {
+      grid-area: header;
+    }
+    .content {
+      grid-area: content;
+    }
+    .nav {
+      grid-area: nav;
+    }
+    .footer {
+      grid-area: footer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="header item">
+      <h1>header</h1>
+    </header>
+    <main class="content item">
+      <h1>content</h1>
+    </main>
+    <nav class="nav item">
+      <h1>nav</h1>
+    </nav>
+    <footer class="footer item">
+      <h1>footer</h1>
+    </footer>
+  </div>
+</body>
+</html>
